@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+    line-height: 1.7;
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply font-serif font-light;
+}
